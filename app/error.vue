@@ -49,7 +49,7 @@ const currentError = errorMessages[props.error.statusCode] || errorMessages.defa
   </NuxtLayout>
 </template>
 
-<style scoped>
+<style>
 section.pb-6 {
   display: none;
 }
