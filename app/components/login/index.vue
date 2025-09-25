@@ -67,10 +67,6 @@ async function onSubmit(form) {
 </template>
 
 <style>
-html, body {
-  overflow: hidden;
-}
-
 section.md\:pt-6 {
   display: none;
 }
