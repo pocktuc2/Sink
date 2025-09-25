@@ -6,15 +6,14 @@ const pageInfo = {
 </script>
 
 <template>
-  <!-- 不用 NuxtLayout，直接渲染全螢幕 -->
+
   <main class="min-h-screen flex items-center justify-center px-6">
     <div class="text-center space-y-6 max-w-md mx-auto">
-      <!-- 標題 -->
+
       <h1 class="text-2xl font-medium text-gray-800">
         {{ pageInfo.title }}
       </h1>
 
-      <!-- 描述 -->
       <p class="text-gray-600 leading-relaxed">
         {{ pageInfo.message }}
       </p>
@@ -23,10 +22,14 @@ const pageInfo = {
 </template>
 
 <style>
+html, body {
+  overflow: hidden;
+}
+
 section.md\:pt-6 {
-    display: none;
+  display: none;
 }
 section.pb-6 {
-    display: none;
+  display: none;
 }
 </style>
