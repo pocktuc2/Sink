@@ -49,8 +49,8 @@ const currentError = errorMessages[props.error.statusCode] || errorMessages.defa
   </NuxtLayout>
 </template>
 
-<style>
-section.pb-6 {
+<style scoped>
+:deep(section.pb-6) {
   display: none;
 }
 </style>
