@@ -2,7 +2,7 @@
 const { title, description, image } = useAppConfig()
 
 useSeoMeta({
-  title: `短網址服務`,
+  title: `${title} - ${description}`,
   description,
   ogType: 'website',
   ogTitle: title,
