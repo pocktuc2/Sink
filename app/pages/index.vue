@@ -21,3 +21,12 @@ const pageInfo = {
     </div>
   </main>
 </template>
+
+<style>
+section.md\:pt-6 {
+    display: none;
+}
+section.pb-6 {
+    display: none;
+}
+</style>
