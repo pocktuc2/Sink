@@ -65,3 +65,16 @@ async function onSubmit(form) {
     </CardContent>
   </Card>
 </template>
+
+<style>
+html, body {
+  overflow: hidden;
+}
+
+section.md\:pt-6 {
+  display: none;
+}
+section.pb-6 {
+  display: none;
+}
+</style>
