@@ -25,30 +25,22 @@ const currentError = errorMessages[props.error.statusCode] || errorMessages.defa
 </script>
 
 <template>
-  <NuxtLayout name="default">
-    <div class="error-page min-h-screen flex items-center justify-center px-6">
-      <div class="text-center space-y-6 max-w-md mx-auto">
-        <!-- 錯誤代碼 -->
-        <div class="text-6xl font-light text-gray-300 select-none">
-          {{ error.statusCode || '404' }}
-        </div>
-        
-        <!-- 錯誤標題 -->
-        <h1 class="text-2xl font-medium text-gray-800">
-          {{ currentError.title }}
-        </h1>
-        
-        <!-- 錯誤描述 -->
-        <p class="text-gray-600 leading-relaxed">
-          {{ currentError.message }}
-        </p>
+  <main class="min-h-screen flex items-center justify-center px-6">
+    <div class="text-center space-y-6 max-w-md mx-auto">
+      <!-- 錯誤代碼 -->
+      <div class="text-6xl font-light text-gray-300 select-none">
+        {{ error.statusCode || '404' }}
       </div>
+      
+      <!-- 錯誤標題 -->
+      <h1 class="text-2xl font-medium text-gray-800">
+        {{ currentError.title }}
+      </h1>
+      
+      <!-- 錯誤描述 -->
+      <p class="text-gray-600 leading-relaxed">
+        {{ currentError.message }}
+      </p>
     </div>
-  </NuxtLayout>
+  </main>
 </template>
-
-<style scoped>
-.error-page :deep(section.pb-6) {
-  display: none;
-}
-</style>
