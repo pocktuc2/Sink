@@ -1,5 +1,5 @@
 <template>
-  <!-- Footer removed -->
+  <div class="h-8"></div>
 </template>
 
 <script>
