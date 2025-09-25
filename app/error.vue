@@ -26,7 +26,7 @@ const currentError = errorMessages[props.error.statusCode] || errorMessages.defa
 
 <template>
   <NuxtLayout name="default">
-    <div class="min-h-screen flex items-center justify-center px-6">
+    <div class="error-page min-h-screen flex items-center justify-center px-6">
       <div class="text-center space-y-6 max-w-md mx-auto">
         <!-- 錯誤代碼 -->
         <div class="text-6xl font-light text-gray-300 select-none">
@@ -42,15 +42,13 @@ const currentError = errorMessages[props.error.statusCode] || errorMessages.defa
         <p class="text-gray-600 leading-relaxed">
           {{ currentError.message }}
         </p>
-        
-
       </div>
     </div>
   </NuxtLayout>
 </template>
 
 <style scoped>
-:deep(section.pb-6) {
+.error-page :deep(section.pb-6) {
   display: none;
 }
 </style>
