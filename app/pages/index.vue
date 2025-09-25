@@ -16,3 +16,18 @@
     </div>
   </main>
 </template>
+
+<style>
+section.md\:pt-6 {
+  display: none;
+}
+.flex.items-center.justify-start.w-1\/4.h-full.pr-4 {
+  display: none;
+}
+</style>
+
+<style scoped>
+section.pb-6 {
+  display: none;
+}
+</style>
